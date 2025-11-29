@@ -84,6 +84,17 @@ int main () {
 		i++;
 	}
 	fclose(fptr);
-	return 0 ;
+
+     fptr=fopen("Newone.txt","w");
+fprintf(fptr,"%s","Hello GuruPremaKosame Nuvuu naaku nachavule");
+	 fclose(fptr);
+    
+      fptr=fopen("Newone.txt","r");
+char line[100];
+fgets(line,100,fptr);
+
+printf("%s",line);
+     fclose(fptr);
+ 	return 0 ;
 
 }
